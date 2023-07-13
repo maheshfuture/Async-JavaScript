@@ -1,0 +1,25 @@
+Why do we use callbacks?
+When doing a complex task, we break that task down into smaller steps. To help us establish a relationship between these steps according to time (optional) and order, we use callbacks
+
+
+let order = (call_production) =>{
+
+console.log("Order placed. Please call production")
+
+// function 👇 is being called 
+  call_production();
+};
+
+let production = () =>{
+
+console.log("Production has started")
+
+};
+
+let production = () =>{
+
+  setTimeout(()=>{
+    console.log("production has started")
+  },0000)
+
+};
